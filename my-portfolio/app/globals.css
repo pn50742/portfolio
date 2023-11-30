@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 :root {
+  --body-bg: #f3f4f9;
+  --bg-container:#fff;
+  --border-gray : #ddd;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -17,11 +20,11 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(18, 31, 67);
+  background-color: var(--body-bg);
+  margin: 0px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
 }
