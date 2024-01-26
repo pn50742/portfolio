@@ -12,17 +12,19 @@ import MailIcon from "@mui/icons-material/Mail";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import Image from "next/image";
 import TabUi from "../UI/TabUi";
-import Link from 'next/link'
+import Link from 'next/link';
+import BasicBreadcrumbs from '../UI/BasicBreadcrumbs';
 
 const Dashboard = () => {
   return (
     <>
-      <AppBar
+      {/* <AppBar
         position="static"
         className="bg-[transparent] shadow-none mb-3 text-gray-400"
       >
         <Container>
           <Toolbar className="flex justify-between px-0">
+            <BasicBreadcrumbs />
             <Box>
               <Button>
                 <SearchOutlinedIcon className="text-gray-400" />
@@ -42,8 +44,8 @@ const Dashboard = () => {
             </Box>
           </Toolbar>
         </Container>
-      </AppBar>
-      <Container sx={{ height: "100vh" }}>
+      </AppBar> */}
+      <Container sx={{ height: "100vh" }} className="mt-3">
         <Paper sx={{ position: "relative" }}>
           <Box className="min-h-40 w-full" sx={{ position: "absolute" }}>
             <Card>
